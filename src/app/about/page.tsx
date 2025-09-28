@@ -3,7 +3,7 @@ export default function About() {
     <div>
       <h1>About</h1>
       <p>
-        Welcome to my personal website. I&apos;m passionate about technology, writing, and creating meaningful projects.
+        Welcome to my personal website. I&apos;m passionate about technology, manufacturing writing, and creating meaningful projects.
       </p>
       <p>
         This is where you can learn more about my background, interests, and what drives me professionally and personally.
