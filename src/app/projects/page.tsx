@@ -5,7 +5,7 @@ export default function Projects() {
   const projects = getAllProjects();
 
   return (
-    <div>
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-16">
       <div className="mb-12">
         <h1>Projects</h1>
         <p className="text-lg text-gray-600">

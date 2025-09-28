@@ -50,7 +50,8 @@ export default function Contact() {
   }
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-16">
+      <div className="max-w-4xl mx-auto">
       <div className="section-header">
         <h1 className="section-title">Get In Touch</h1>
         <p className="section-subtitle">
@@ -244,6 +245,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 } 

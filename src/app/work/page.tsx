@@ -1,6 +1,6 @@
 export default function Work() {
   return (
-    <div>
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-16">
       <div className="section-header">
         <h1 className="section-title">Work & Experience</h1>
         <p className="section-subtitle">
