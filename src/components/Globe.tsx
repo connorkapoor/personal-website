@@ -49,7 +49,7 @@ interface GlobeProps {
 export default function Globe({ isMinimized, onSatelliteClick }: GlobeProps) {
   const [rotation, setRotation] = useState(0);
   const [satellitePositions, setSatellitePositions] = useState(satellites);
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number | undefined>(undefined);
 
   useEffect(() => {
     const animate = () => {
