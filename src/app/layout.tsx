@@ -13,16 +13,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>
-        <div className="min-h-screen bg-white">
-          <nav className="border-b border-gray-100 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
-            <div className="max-w-4xl mx-auto px-6 py-6">
-              <div className="flex items-center justify-between">
-                <Link href="/" className="text-lg font-semibold tracking-tight hover:opacity-70 transition-opacity">
+    <html lang="en" className="scroll-smooth">
+      <body className="min-h-screen bg-white text-slate-900 antialiased">
+        <div className="gradient-bg min-h-screen">
+          {/* Navigation */}
+          <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 shadow-sm">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="flex items-center justify-between h-16">
+                {/* Logo */}
+                <Link 
+                  href="/" 
+                  className="text-xl font-bold text-slate-900 hover:text-slate-700 transition-colors duration-200"
+                >
                   Personal Website
                 </Link>
-                <div className="flex items-center space-x-8">
+                
+                {/* Navigation Links */}
+                <div className="hidden md:flex items-center space-x-8">
                   <Link href="/about" className="nav-link">
                     About
                   </Link>
@@ -39,20 +46,52 @@ export default function RootLayout({
                     Contact
                   </Link>
                 </div>
+                
+                {/* Mobile menu button */}
+                <div className="md:hidden">
+                  <button className="text-slate-600 hover:text-slate-900 transition-colors duration-200">
+                    <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
           </nav>
           
-          <main className="max-w-4xl mx-auto px-6 py-12">
-            <div className="max-w-3xl">
+          {/* Main Content */}
+          <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-16">
+            <div className="max-w-4xl mx-auto">
               {children}
             </div>
           </main>
           
-          <footer className="border-t border-gray-100 mt-20">
-            <div className="max-w-4xl mx-auto px-6 py-8">
-              <div className="text-center text-sm text-gray-500">
-                <p>&copy; 2024 Personal Website. Built with Next.js.</p>
+          {/* Footer */}
+          <footer className="border-t border-slate-200 bg-white/50 backdrop-blur-sm mt-20">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+              <div className="text-center">
+                <div className="flex items-center justify-center space-x-6 mb-6">
+                  <Link href="/about" className="text-slate-600 hover:text-slate-900 transition-colors duration-200">
+                    About
+                  </Link>
+                  <Link href="/work" className="text-slate-600 hover:text-slate-900 transition-colors duration-200">
+                    Work
+                  </Link>
+                  <Link href="/writing" className="text-slate-600 hover:text-slate-900 transition-colors duration-200">
+                    Writing
+                  </Link>
+                  <Link href="/projects" className="text-slate-600 hover:text-slate-900 transition-colors duration-200">
+                    Projects
+                  </Link>
+                  <Link href="/contact" className="text-slate-600 hover:text-slate-900 transition-colors duration-200">
+                    Contact
+                  </Link>
+                </div>
+                <div className="border-t border-slate-200 pt-6">
+                  <p className="text-sm text-slate-500">
+                    &copy; 2024 Personal Website. Built with Next.js and Tailwind CSS.
+                  </p>
+                </div>
               </div>
             </div>
           </footer>
