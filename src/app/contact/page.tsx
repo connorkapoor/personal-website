@@ -113,8 +113,8 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="input-field"
-                  placeholder="Your name"
+                                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-900 focus:border-transparent transition-all duration-200 bg-white placeholder-slate-400"
+                    placeholder="Your name"
                 />
               </div>
               
@@ -129,8 +129,8 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="input-field"
-                  placeholder="your.email@example.com"
+                                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-900 focus:border-transparent transition-all duration-200 bg-white placeholder-slate-400"
+                    placeholder="your.email@example.com"
                 />
               </div>
             </div>
@@ -146,7 +146,7 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 rows={6}
-                className="input-field resize-vertical"
+                                  className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-900 focus:border-transparent transition-all duration-200 bg-white placeholder-slate-400 resize-vertical"
                 placeholder="Tell me about your project, question, or just say hello..."
               />
             </div>

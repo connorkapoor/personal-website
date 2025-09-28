@@ -68,7 +68,7 @@ export default async function BlogPost({ params }: Props) {
         </header>
         
         <div 
-          className="prose-custom"
+          className="prose prose-slate prose-lg max-w-none"
           dangerouslySetInnerHTML={{ __html: contentHtml }}
         />
         
